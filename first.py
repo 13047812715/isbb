@@ -1,0 +1,64 @@
+import streamlit as st
+import random
+
+# 页面配置
+st.set_page_config(page_title="棱镜乐队 音乐播放器", page_icon="🎵", layout="centered")
+
+# 定义棱镜乐队的歌曲数据
+songs = [
+    {
+        "title": "总有一天你会出现在我身边",
+        "artist": "棱镜乐队",
+        "duration": "4:30",
+        "cover": "http://p1.music.126.net/RfUHXkanpxImcaGqFNWBeA==/109951163598901405.jpg?param=130y130",
+        "audio_url": "https://music.163.com/song/media/outer/url?id=1303027499.mp3"
+    },
+    {
+        "title": "这是我一生中最勇敢的瞬间",
+        "artist": "棱镜乐队",
+        "duration": "4:34",
+        "cover": "http://p2.music.126.net/ysc2LpByNXmzAfz9rRVwYg==/109951165267741474.jpg?param=130y130",
+        "audio_url": "https://music.163.com/song/media/outer/url?id=1366216050.mp3"
+    },
+    {
+        "title": "克林",
+        "artist": "棱镜乐队",
+        "duration": "5:02",
+        "cover": "http://p2.music.126.net/6VTLVzDcp8ZtKVPBLOF5eg==/109951163203484145.jpg?param=130y130",
+        "audio_url": "https://music.163.com/song/media/outer/url?id=549320309.mp3"
+    }
+]
+
+# 初始化会话状态，记录当前播放歌曲索引
+if "current_song_idx" not in st.session_state:
+    st.session_state.current_song_idx = 0
+
+# 获取当前歌曲
+current_song = songs[st.session_state.current_song_idx]
+
+# 页面标题和说明
+st.title("🎵 棱镜乐队 音乐播放器")
+st.caption("使用Streamlit制作的棱镜乐队专属音乐播放器，支持切歌和基本播放控制")
+
+# 分栏展示封面和歌曲信息
+col1, col2 = st.columns([1, 2])
+with col1:
+    st.image(current_song["cover"], width=200, caption="专辑封面")
+with col2:
+    st.header(current_song["title"])
+    st.write(f"歌手: {current_song['artist']}")
+    st.write(f"时长: {current_song['duration']}")
+
+# 切歌按钮
+col_prev, col_next = st.columns(2)
+with col_prev:
+    if st.button("⏮️ 上一首"):
+        st.session_state.current_song_idx = (st.session_state.current_song_idx - 1) % len(songs)
+        st.rerun()  # 重新运行页面刷新内容
+with col_next:
+    if st.button("⏭️ 下一首"):
+        st.session_state.current_song_idx = (st.session_state.current_song_idx + 1) % len(songs)
+        st.rerun()
+
+# 播放音频
+st.audio(current_song["audio_url"], format="audio/mp3")
