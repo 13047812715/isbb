@@ -10,21 +10,21 @@ songs = [
         "title": "总有一天你会出现在我身边",
         "artist": "棱镜乐队",
         "duration": "4:30",
-        "cover": "http://p1.music.126.net/RfUHXkanpxImcaGqFNWBeA==/109951163598901405.jpg?param=130y130",
+        "cover": "https://ts1.tc.mm.bing.net/th/id/R-C.1fab562c2d5b13c9766c2a1245f0d627?rik=i68hcmcOXMWwrQ&riu=http%3a%2f%2fpuui.qpic.cn%2fvpic_cover%2ff3331hxg8qs%2ff3331hxg8qs_hz.jpg%2f1280&ehk=4dQr6eC4HWjtewNYmQbvMRVemGuR%2borQEjU3UrwWkNw%3d&risl=&pid=ImgRaw&r=0",
         "audio_url": "https://music.163.com/song/media/outer/url?id=1303027499.mp3"
     },
     {
         "title": "这是我一生中最勇敢的瞬间",
         "artist": "棱镜乐队",
         "duration": "4:34",
-        "cover": "http://p2.music.126.net/ysc2LpByNXmzAfz9rRVwYg==/109951165267741474.jpg?param=130y130",
+        "cover": "https://ts1.tc.mm.bing.net/th/id/R-C.1528374fd021720eea6042651f490a74?rik=rEvN02RUw6uqww&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20200717ac%2f200%2fw640h360%2f20200717%2f564a-iwpcxkr7503227.jpg&ehk=5zMa4swwrr7x9WFe2H8WlBVmSZdQHHO2FpXgrDa5HU0%3d&risl=&pid=ImgRaw&r=0",
         "audio_url": "https://music.163.com/song/media/outer/url?id=1366216050.mp3"
     },
     {
         "title": "克林",
         "artist": "棱镜乐队",
         "duration": "5:02",
-        "cover": "http://p2.music.126.net/6VTLVzDcp8ZtKVPBLOF5eg==/109951163203484145.jpg?param=130y130",
+        "cover": "https://ts1.tc.mm.bing.net/th/id/R-C.cbe5e3ef815e5a7dcf3de075976916e0?rik=PdWcIMhRCa3wmw&riu=http%3a%2f%2fwww.shaomingyang.com%2fuploads%2fallimg%2f210918%2f1911462112-0.jpg&ehk=dqAA5esqDE5a6pMiYvd3n0mSKDeSUeZbg79R0%2fQ33GM%3d&risl=&pid=ImgRaw&r=0",
         "audio_url": "https://music.163.com/song/media/outer/url?id=549320309.mp3"
     }
 ]
